@@ -82,7 +82,11 @@ header {
 
 .navbar {
     padding: 0;
-    border-bottom: 1px solid #cccccc;
+    background-color:white;
+}
+
+.bg-light {
+    background-color:white !important;
 }
 
 .nav-link {
@@ -94,14 +98,15 @@ header {
 
 .name {
     background-color:#4aaaa5;
-    width:25%;
+    max-width:45%;
     height: auto;
     margin:0;
-    padding:0;
+    padding:1%;
     display:inline-block;
     color:white !important;
     font-family: 'Georgia', Times, Times New Roman, serif;
-    font-size:30px;
+    font-size:10%;
+    position:relative;
     font-weight:bold;
     text-align:center;
     
@@ -109,7 +114,8 @@ header {
 
 .name a {
     color:white !important;
-    padding:5%;
+    padding-left:4%;
+    
 }
 
 
@@ -130,8 +136,8 @@ nav li:last-child{
 */
 
 .headwrap {
-    width:960px !important;
-    height:80px;
+    width:80% !important;
+    height:auto;
     margin: 0 auto;
     padding:0;
 
@@ -352,13 +358,7 @@ h1 {
     margin: 5% auto;
 }
 
-.headwrap {
-    width:90% !important;
-    height:80px;
-    margin: 0 auto;
-    padding:0;
 
-}
 
 .column {
     margin: 0 auto;
