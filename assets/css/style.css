@@ -59,6 +59,7 @@ h4 {
     font-size:20px;
 }
 
+
 p {
     color:#777777;
     font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
@@ -95,7 +96,10 @@ header {
     text-decoration:none;
     color:#777777;
     padding: 0 .5rem;
+    border-right: 1px solid #777777 !important;
+    height: 20px;
 }
+
 
 .name {
     background-color:#4aaaa5;
@@ -120,22 +124,11 @@ header {
 }
 
 
-.nav-item {
-    border-right: 1px solid #777777 !important;
-    height: 20px;
-}
-
-.nav-item:last-child{
+.nav-item:last-child a.nav-link {
     padding-right:0;
     border-right: none !important;
 }
 
-/*header::after{
-    content:"";
-    display:block;
-    clear:both;
-}
-*/
 
 .headwrap {
     width:80% !important;
@@ -179,39 +172,6 @@ header {
     height:auto;
     float: left;
 }
-
-/* ------ Navigation -------- 
-
-nav {
-    float:right;
-}
-
-nav ul {
-    list-style-type:none;
-    padding-top:15%;
-}
-
-nav li {
-    display: inline;
-    float:left;
-    padding-left:20px;
-    padding-right:20px;
-    border-right: 1px solid #777777 !important;
-}
-
-nav li a {
-    display:block;
-    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    font-size: 15px;
-    text-decoration:none;
-    color:#777777;
-    
-}
-nav li:last-child{
-    padding-right:0;
-    border-right: none !important;
-}
-*/
 
 
 /* About Me Section Styling */
@@ -263,31 +223,30 @@ label {
 
 .portfolioLabel {
     background-color:#4aaaa5;
-    text-align:center;
     height: auto;
     width:100%;
-    position:absolute;
-    bottom:20%;
-    z-index:200;
-    display:block;
-    padding: 2% 0;
+    position:relative;
+    bottom:3em;
+    padding:2%;
+    text-align:center;
     color:white;
     font-family: 'Georgia', Times, Times New Roman, serif;
     font-size:25px;
     font-weight:bold;
-    text-align:center;
-    max-width: 300px;
 }
 
-.portfolioImg {
-    max-height:200px;
-    max-width:300px;
+.img-fluid {
     border: 1px solid #cccccc;
 }
 
-.portfolioRow {
-    margin: 2% 0;
+.portfoliodiv{
+    margin: 4% auto;
 }
+
+.portfoliodiv a {
+    text-decoration:none !important;
+}
+
 /*.row {
     margin: 2% auto !important;
     width:100%;
@@ -347,37 +306,12 @@ footer {
 }
 
 /*
-/* ------------------------------------------ 980 Media Query----------------------------------------
-@media only screen and (max-width: 980px){
+/* ------------------------------------------ 991 Media Query----------------------------------------*/
+@media only screen and (max-width: 991px){
 
-h1 {
-    font-size:25px;
-    padding-top:9%;
-}
-
-.wrapper {
-    width: 90%;
-    margin: 5% auto;
-}
-
-
-
-.column {
-    margin: 0 auto;
-}
-
-
-/*end of 980 Media Query*/
-}
-
-/* ------------------------------------------ 768 Media Query----------------------------------------
-@media only screen and (max-width: 768px){
+.nav-link {
+    border:none !important;}
     
-h1 {
-    padding-top:28px;
-}
-
-/*end of 768 Media Query*/
 }
 
 /* ------------------------------------------ 640 Media Query----------------------------------------
