@@ -1,0 +1,448 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+html {
+    position:relative;
+    min-height:100%;
+}
+
+body {
+ background-image: url(../images/intersection.png);
+ background-repeat:repeat;
+ background-attachment:fixed;
+ display:flex;
+ flex-direction:column;
+
+}
+
+img {
+    width:100%;
+    height:auto;
+}
+
+h1 {
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    padding-top:25px;
+
+}
+
+h1 a {
+    color:white;
+    text-decoration:none !important;
+}
+
+h2 {
+    color:#4aaaa5;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:30px;
+    font-weight:bold;
+}
+
+h3 {
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 8px;
+    margin-top: 20px;
+}
+
+h4 {
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:20px;
+}
+
+p {
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    line-height:22px;
+    margin: 2% 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
+/* Header and Navigation */
+
+header {
+ background-color:#ffffff;
+ border-bottom: 2px solid #cccccc;
+ width:100%;
+}
+
+.navbar {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.nav-link {
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    color:#777777;
+}
+
+.name {
+    background-color:#4aaaa5;
+    width:25%;
+    height: auto;
+    margin:0;
+    padding:0;
+    display:inline-block;
+    color:white !important;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:30px;
+    font-weight:bold;
+    text-align:center;
+    
+}
+
+.name a {
+    color:white !important;
+    padding:5%;
+}
+
+
+nav li {
+    border-right: 1px solid #777777 !important;
+}
+
+nav li:last-child{
+    padding-right:0;
+    border-right: none !important;
+}
+
+/*header::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+*/
+
+.headwrap {
+    width:960px !important;
+    height:80px;
+    margin: 0 auto;
+    padding:0;
+
+}
+
+.headwrap:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+/* General Body Styling */
+
+.container {
+    background-color:#ffffff;
+    margin: 2% auto 9% auto;
+    padding:5%;
+    border: 1px solid #cccccc;
+    width:80%;
+   /* flex: 1 0 auto;*/
+}
+
+.sectionTitle{
+    width:100%;
+    border-bottom:2px solid #cccccc;
+}
+
+.sectionContent {
+    width:100%;
+    padding: 2% 0;
+}
+
+#aboutImage {
+    display: inline;
+    margin: 2%;
+    width:33%;
+    height:auto;
+    float: left;
+}
+
+/* ------ Navigation -------- 
+
+nav {
+    float:right;
+}
+
+nav ul {
+    list-style-type:none;
+    padding-top:15%;
+}
+
+nav li {
+    display: inline;
+    float:left;
+    padding-left:20px;
+    padding-right:20px;
+    border-right: 1px solid #777777 !important;
+}
+
+nav li a {
+    display:block;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration:none;
+    color:#777777;
+    
+}
+nav li:last-child{
+    padding-right:0;
+    border-right: none !important;
+}
+*/
+
+
+/* About Me Section Styling */
+
+#aboutimg {
+    width:30%;
+}
+
+/* Contact Page Form */
+
+form {
+    margin-top: 1%;
+}
+
+input {
+    width:99%;
+    display:block;
+    margin: 1% 0;
+    line-height:25px;
+}
+
+input::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.message {
+    min-height:140px;
+}
+
+input[type=submit] {
+    background-color:#4aaaa5;
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+    width:100px;
+
+}
+
+label {
+    color:#777777;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+
+/* Portfolio Formatting */
+
+.portfolioLabel {
+    background-color:#4aaaa5;
+    text-align:center;
+    height: auto;
+    width:100%;
+    position:absolute;
+    bottom:20%;
+    z-index:200;
+    display:block;
+    padding: 2% 0;
+    color:white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size:25px;
+    font-weight:bold;
+    text-align:center;
+    max-width: 300px;
+}
+
+.portfolioImg {
+    max-height:200px;
+    max-width:300px;
+    border: 1px solid #cccccc;
+}
+
+.portfolioRow {
+    margin: 2% 0;
+}
+/*.row {
+    margin: 2% auto !important;
+    width:100%;
+}
+
+.row::after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
+.column {
+    width: 49%;
+    margin: 0 auto;
+    padding: 2%;
+    display:inline-block;
+}
+
+.column img{
+    margin: 0 auto;
+    z-index:100;
+    width:100%;
+    height: auto;
+}
+
+.portfolioLabel {
+    background-color:#4aaaa5;
+    text-align:center;
+    height: auto;
+    width:100%;
+    padding:2% 0;
+    position:relative;
+    bottom: 70px;
+    z-index:200;
+    float:left;
+    display:block;
+}
+
+.portfolioLabel:hover {
+    opacity: .75;
+}
+*/
+
+/* Footer */
+
+footer {
+    border-top: solid 5px #4aaaa5;
+    background-color:#666666;
+    color:white;
+    font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align:center;
+    display:block;
+    height:auto;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
+/*
+/* ------------------------------------------ 980 Media Query----------------------------------------
+@media only screen and (max-width: 980px){
+
+h1 {
+    font-size:25px;
+    padding-top:9%;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 5% auto;
+}
+
+.headwrap {
+    width:90% !important;
+    height:80px;
+    margin: 0 auto;
+    padding:0;
+
+}
+
+.column {
+    margin: 0 auto;
+}
+
+
+/*end of 980 Media Query*/
+}
+
+/* ------------------------------------------ 768 Media Query----------------------------------------
+@media only screen and (max-width: 768px){
+    
+h1 {
+    padding-top:28px;
+}
+
+/*end of 768 Media Query*/
+}
+
+/* ------------------------------------------ 640 Media Query----------------------------------------
+@media only screen and (max-width: 640px){
+    
+header {
+    height:auto;
+    position:static;
+}
+
+nav{
+    display:block;
+    width: 100%;
+    height:auto;
+    margin: 2% 0;
+}
+
+nav ul {
+    padding:0;
+margin-left: auto;
+margin-right:auto;    
+    width:80% !important;
+}
+
+nav li {
+    margin: 0 auto;
+    display:inline-block;
+    position:relative;
+    width:33.3%;
+    padding-left:5%;
+    padding-left:5%;
+    text-align:center;
+}
+
+
+.name {
+    display:block;
+    width:100%;
+    
+}
+
+.headwrap {
+    height:auto;
+    width:100% !important;
+}
+
+footer {
+    position:static;
+    bottom:0;
+    width:100%;
+}
+
+#aboutimg{
+    display:block;
+    width:95%;
+    height: auto;
+    margin: 0 auto;
+    clear:both;
+    float: none;
+}
+
+#aboutimg::after {
+    content: "";
+    display:block;
+    clear:both;
+}
+/*end of 640 Media Query
+}
+*/
+
