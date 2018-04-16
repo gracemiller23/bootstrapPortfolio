@@ -94,6 +94,7 @@ header {
     font-size: 15px;
     text-decoration:none;
     color:#777777;
+    padding: 0 .5rem;
 }
 
 .name {
@@ -119,11 +120,12 @@ header {
 }
 
 
-nav li {
+.nav-item {
     border-right: 1px solid #777777 !important;
+    height: 20px;
 }
 
-nav li:last-child{
+.nav-item:last-child{
     padding-right:0;
     border-right: none !important;
 }
