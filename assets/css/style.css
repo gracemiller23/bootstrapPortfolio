@@ -26,7 +26,7 @@ img {
 
 h1 {
     color:white;
-    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-family: "Georgia", Times, Times New Roman, serif;
     font-size:30px;
     font-weight:bold;
     text-align:center;
@@ -171,6 +171,7 @@ header {
     width:33%;
     height:auto;
     float: left;
+    border-radius: 60%;
 }
 
 
@@ -262,12 +263,32 @@ footer {
     width:100%;
 }
 
-/*
 /* ------------------------------------------ 991 Media Query----------------------------------------*/
 @media only screen and (max-width: 991px){
 
 .nav-link {
-    border:none !important;}
+    border:none !important;
+}
     
 }
 
+@media only screen and (max-width: 768px) {
+    
+    p {
+        margin: 4% 0;
+    }
+    
+    #aboutImage {
+        display:block;
+        min-width: 80%;
+        margin: 2% auto;
+        clear:both;
+        float:none;
+    }
+
+    #aboutImage:after {
+        content: "";
+        display:block;
+        clear:both;
+    }
+}
